@@ -53,8 +53,9 @@ The competition environment is a 2-player grid game where each agent plays as a 
   - controlled_player_index: the index of current controlled agent;
 - Action:
   - movement: dimension 5, agent can move up, down, right, left or stay still.
-  - accept orders: dimension 20, 1 represents for accepting the orders.
-  - deliver orders: dimension 5, whether to drop the orders at current location, 1 represent for yes and 0 for no.
+  - pick up orders: dimension 20, 1 represents for picking up the order in the current restaurant;
+  - deliver orders: dimension 5, whether to deliver the orders at current location, 5 is the maximum capacity for each rider, 1 represent for yes and 0 for no.
+  - accept orders: dimension 10, whether to accept the generated orders (maximum 10) at current time-step.
 - Reward:
   - positive reward for the order that is successfully delivered in time, the value is equal to the restaurant-customer distance;
   - negative reward for the accepted order that exceeds time limit, the value is equal to half of the restaurant-customer distance.
@@ -90,7 +91,9 @@ python run_log.py
 	|	|	|-- submission.py       // A ready-to-submit random agent file
 	|-- env		                        // scripts for the environment
 	|	|-- config.py                   // environment configuration file
-	|	|-- delivery.py  // The environment wrapper		      
+	|	|-- delivery.py  // The environment wrapper		  
+	|-- rl_train
+	|       |-- tools.py                    //some helper function for feature engineering  
 	|-- utils               
 	|-- run_log.py		                // run the game with provided agents (same way we evaluate your submission in the backend server)
 ```
