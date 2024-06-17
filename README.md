@@ -2,9 +2,6 @@
 
 # RLChina Competition - Summer Season
 
-This repo provide the source code for the [RLChina Competition - Jia Chen Summer Season](http://www.jidiai.cn/compete_detail?compete=53)
-
-
 
 ## Multi-Agent Game Evaluation Platform --- Jidi (及第)
 Jidi supports online evaluation service for various games/simulators/environments/testbeds. Website: [www.jidiai.cn](www.jidiai.cn).
