@@ -2,7 +2,7 @@
 
 # RLChina Competition - Gui Mao Summer Season
 
-This repo provide the source code for the [RLChina Competition - Gui Mao Summer Season](http://www.jidiai.cn/compete_detail?compete=41)
+This repo provide the source code for the [RLChina Competition - Jia Chen Summer Season](http://www.jidiai.cn/compete_detail?compete=53)
 
 
 
@@ -65,7 +65,7 @@ The competition environment is a 2-player grid game where each agent plays as a 
 You can use any tool to manage your python environment. Here, we use conda as an example.
 
 ```bash
-conda create -n deliver-venv python==3.7  
+conda create -n deliver-venv python==3.9  
 conda activate deliver-venv
 ```
 
